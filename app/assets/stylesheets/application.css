@@ -13,3 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+    margin: auto;
+    -moz-osx-font-smoothing: auto;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.twitter_contents, a, span, p, .twitter_user, .twitter_contents, .fav, .nofav{
+  -moz-osx-font-smoothing: auto;
+  vertical-align: baseline;
+ -o-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ font-family: Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding: 0px 30px 50px 0px;
+}
+
+.header{
+    text-align: center;
+    background-color: rgba(20,20,20,0.1)
+}
+
+a{
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.tweet_area{
+    width: 100%;
+    display: table;
+    border: 3px solid rgba(240,240,240,0.6);
+    padding: 10px 20px 10px 10px;
+}
+
+.twitter_area :hover{
+    padding: 10px;
+}
+
+.twitter_icon{
+    float: left;
+}
+
+.twitter_user{
+    height:50px;
+}
+
+span{
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.twitter_contents{
+    clear: both;
+    padding: 5px;
+}
+
+.twitter_pic{
+    width: 70%;
+    transition: all 0.2s linear;
+    text-align: center;
+}
+
+.twitter_pic:hover{
+    transform: scale(1.01);
+}
+
+.fav{
+    display: none;
+}
+
+.forcookieicon , .forcookiemedia{
+    display: none;
+    font-size: 0.01em;
+}
+
+.nofav{
+    text-align: center;
+    font-size: 4em;
+    color: rgba(0,0,0,0.5);
+    
+}

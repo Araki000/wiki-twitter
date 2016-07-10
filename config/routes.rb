@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :wikitwitters
   root "wikitwitters#index"
   
+  # /usr/local/rvm/gems/ruby-2.3.0/gems/wikipedia-client-1.6.2/lib/wikipedia.rb
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

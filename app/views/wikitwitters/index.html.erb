@@ -1,2 +1,34 @@
-<h1>Test</h1>
-<%= @page.title %>
+
+<!--Title-->
+<div class="header" data-role="header">
+	<h1 class = 'Wikititle'><a href = <%= "https://ja.wikipedia.org/wiki/" + @page.title %> style="color: #666;, width:100%;"><%= @page.title %></a></h1>
+</div>
+<!--go to the list of favorite-->
+<div class="header">
+	<div class = "favorite"><%= link_to "wanna see your favorites ?", new_wikitwitter_path, :style=>"color:#666;" %></div>
+</div>
+
+<!--from wikitwitters-->
+<main role="main">
+<% @result.each do |tweet| %>
+	<!--this if doesn't work-->
+	<% if tweet == "" || tweet.nil? then%>
+		<p>hoge</p>
+		<% break %>
+	<% else %>
+	<div class = 'tweet_area'>
+		<div class='forcookieicon'><%= tweet.user.profile_image_url %></div>
+		<div class = 'twitter_icon'><img src = '<%= tweet.user.profile_image_url %>' alt = 'icon'></img></div>
+		<div claas = 'twitter_user'><span claas = 'twitter_username'><%= tweet.user.name %></span></div>
+		<div class = "fav"></div>
+		<div class = 'twitter_contents'><%= tweet.text %></div>
+		<% if tweet.media? then %>
+			<% tweet.media.each do |value| %>
+	       		<img src =	<%=value.media_uri %> class = 'twitter_pic'>
+	       		<div class = "forcookiemedia"><%=value.media_uri %></div>
+    		<% end %>
+    	<% end %>
+    </div>
+    <% end %>
+<% end %>
+</main>
