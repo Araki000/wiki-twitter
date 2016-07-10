@@ -1,28 +1,23 @@
 == README
+## Version
+2016/07/11 ver 1.0 released
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+This is an application for boring people, especially smartphone/iPhone user! :)
+You go the app page, on the top randam words lies, and there are some rumors about the word.
 
-Things you may want to cover:
+Now you can see nowadays rumor, and be a gossipy guy!!
 
-* Ruby version
+## Description
+this is a rails apprication. Getting a title of Wikipedia's page with random, it gets tweets from twitter using TwitterAPI.
+Also, if you tap some tweets, they will turn yellow which means "you favorited this tweet!". You can see these favorites to tap "wanna see your favorites??".
 
-* System dependencies
+## Error and Improvement
+> You can favorite ONLY 5 tweets now. Sorry
+> If you favorite a tweet which contains "," , your favotited list will be gone.
+> You can't see any tweets in the timeline? That's why TwitterAPI can find tweets in a week.
+> Actually, IT IS sometimes REALLY HEAVY.
+> Due to TwitterAPI restriction, don't reload the timeline many times. This app will be locked for a while.
+> 日本語Wikiで検索をしたい…
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
