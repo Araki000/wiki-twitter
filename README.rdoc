@@ -4,7 +4,7 @@
 
 Overview
 ==================
-This is an application for boring people, especially smartphone/iPhone user! :)
+  This is an application for boring people, especially smartphone/iPhone user! :)
   You go the app page, on the top randam words lies, and there are some rumors about the word.
   Now you can see nowadays rumor, and be a gossipy guy!!
 
