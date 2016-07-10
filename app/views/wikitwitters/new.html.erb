@@ -1,0 +1,38 @@
+<div class="header" data-role="header">
+    <h1>Your favotites</h1>
+</div>
+<div class="header">
+	<div class = "favorite"><%= link_to "Back to timeline", root_path, :style=>"color:#666;" %></div>
+</div>
+
+<% temp = cookies["fav"].split(',') unless cookies["fav"].nil? %>
+<% if temp.nil? || temp == [] then%>
+<p class = "nofav">No favorite<p>
+
+<% else %>
+<% j = 0%>
+<% limit = temp.length / 4 %>
+<% tweets = [] %>
+<% for i in 0..(limit) do
+    tweets.push([temp[j],temp[j+1],temp[j+2],temp[j+3]])
+    j += 4 %>
+<% end %>
+<% tweets.each do |tweet| %>
+	<% if tweet[1].nil? || tweet[1] == "" then %>
+	<% else %>
+	<div class = 'tweet_area' style = "background-color: rgba(255,255,153,0.6);">
+		<div class='forcookieicon'><%= tweet[0] %></div>
+		<div class = 'twitter_icon'><img src = '<%= tweet[0] %>' alt = 'icon'></img></div>
+		<div claas = 'twitter_user'><span claas = 'twitter_user'><%= tweet[1] %></span></div>
+		<div class = "fav">favorite</div>
+		<div class = 'twitter_contents'><%= tweet[2] %></div>
+		<% if tweet[3].nil? || tweet[3] == "" then %>
+		<% else %>
+       		<img src =	<%= tweet[3] %> class = 'twitter_pic'>
+       		<div class = "forcookiemedia"><%= tweet[3] %></div>
+		<% end %>
+    </div>
+    <% end %>
+    
+<% end %>
+<% end %>
