@@ -16,8 +16,9 @@ Description
 Error and Improvement
 ========================
   > You can favorite ONLY 5 tweets now. Sorry
+  > You may reload web page if you can't favorite tweets.
   > If you favorite a tweet which contains "," , your favotited list will be gone.
   > You can't see any tweets in the timeline? That's why TwitterAPI can find tweets in a week.
-  > Actually, IT IS sometimes REALLY HEAVY.
+  > IT IS sometimes REALLY HEAVY.
   > Due to TwitterAPI restriction, don't reload the timeline many times. This app will be locked for a while.
   > 日本語Wikiで検索をしたい…
